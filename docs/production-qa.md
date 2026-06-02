@@ -30,7 +30,7 @@ Wykonane kontrole:
 - lokalne assety z `index.html` istnieją w repo
 - lokalnie `/`, `hero-next-day-map.webp`, `hero-next-day-map-mobile.webp`, `robots.txt` i `sitemap.xml` zwracają `200 OK`
 - `http://ptstrans.pl/` zwraca `200 OK` z GitHub Pages
-- tytuł strony: `PTS TRANS | Warszawa-Wiedeń Next Day B2B`
+- tytuł strony: `PTS TRANS | Wiedeń i Bratysława Next Day B2B`
 - brak błędów i ostrzeżeń w konsoli przeglądarki podczas renderu
 - linki `tel:` i `mailto:` są obecne
 - kotwice istnieją: `#produkt`, `#next-day`, `#trasy`, `#lotniska`, `#flota`, `#kontakt`

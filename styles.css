@@ -1308,6 +1308,53 @@ body {
   }
 }
 
+/* Hero copy is HTML again; generated images are background-only. */
+.hero-generated .eyebrow,
+.hero-generated h1,
+.hero-generated .hero-copy {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+}
+
+.hero-generated .hero-content {
+  justify-content: center;
+  align-items: start;
+  padding-top: clamp(38px, 7vh, 76px);
+  padding-bottom: clamp(36px, 7vh, 72px);
+}
+
+.hero-generated h1 {
+  max-width: 720px;
+  font-size: clamp(42px, 6.2vw, 76px);
+  line-height: 1;
+}
+
+.hero-generated .hero-copy {
+  max-width: 650px;
+}
+
+@media (max-width: 640px) {
+  .hero-generated .hero-content {
+    padding-top: 34px;
+  }
+
+  .hero-generated h1 {
+    max-width: 360px;
+    font-size: 42px;
+  }
+
+  .hero-generated .hero-copy {
+    max-width: 360px;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 640px) {
   .site-nav {
     top: 66px;
@@ -1926,5 +1973,52 @@ body {
 
   .site-nav a {
     padding: 14px 0;
+  }
+}
+
+/* Final hero pass: generated images are background-only, copy is real HTML. */
+.hero-generated .eyebrow,
+.hero-generated h1,
+.hero-generated .hero-copy {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+}
+
+.hero-generated .hero-content {
+  justify-content: center;
+  align-items: start;
+  padding-top: clamp(38px, 7vh, 76px);
+  padding-bottom: clamp(36px, 7vh, 72px);
+}
+
+.hero-generated h1 {
+  max-width: 720px;
+  font-size: clamp(42px, 6.2vw, 76px);
+  line-height: 1;
+}
+
+.hero-generated .hero-copy {
+  max-width: 650px;
+}
+
+@media (max-width: 640px) {
+  .hero-generated .hero-content {
+    padding-top: 34px;
+  }
+
+  .hero-generated h1 {
+    max-width: 360px;
+    font-size: 42px;
+  }
+
+  .hero-generated .hero-copy {
+    max-width: 360px;
+    font-size: 16px;
   }
 }
