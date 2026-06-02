@@ -22,6 +22,16 @@ HTTPS może potrzebować czasu po zmianach DNS. GitHub podaje, że wygenerowanie
 
 ## DNS w lh.pl
 
+Stan z 2026-06-02:
+
+- domena `ptstrans.pl` kupiona i zarządzana w lh.pl,
+- domena dodana jako strona WWW na serwerze `serwer398886`,
+- pozycja strony WWW w lh.pl: `1589726`,
+- strefa DNS w lh.pl: `1551944`,
+- GitHub Pages custom domain: `ptstrans.pl`,
+- `http://ptstrans.pl/` zwraca stronę z GitHub Pages,
+- HTTPS czeka na certyfikat GitHub Pages; po aktywacji certyfikatu trzeba włączyć `https_enforced`.
+
 Dla domeny głównej `ptstrans.pl` ustaw rekordy:
 
 | Typ | Nazwa/host | Wartość |
@@ -37,6 +47,15 @@ Dla domeny głównej `ptstrans.pl` ustaw rekordy:
 | CNAME | `www` | `ghawdexpro.github.io` |
 
 Usuń albo nie twórz innych rekordów `A`, `AAAA`, `ALIAS`, `ANAME` dla domeny głównej oraz konfliktowych rekordów `CNAME` dla `www`, bo mogą blokować certyfikat HTTPS GitHub Pages.
+
+Rekordy pocztowe lh.pl zostają w strefie, żeby domena była gotowa pod przyszły adres email:
+
+- `MX ptstrans.pl -> 5 mail20.lh.pl`
+- `TXT ptstrans.pl -> v=spf1 include:_spf.lh.pl -all`
+- `CNAME mail/pop3/smtp/imap.ptstrans.pl -> mail20.lh.pl`
+- `SRV _autodiscover._tcp.ptstrans.pl -> autodiscover.lh.pl.`
+
+W strefie zostaje też domyślny wildcard `A *.ptstrans.pl -> 195.2.222.194`. Nie koliduje z domeną główną ani `www`, bo dla nich istnieją dokładne rekordy.
 
 ## Weryfikacja
 
@@ -65,3 +84,9 @@ Oczekiwane:
 
 - `https://ptstrans.pl/` zwraca stronę PTS-TRANS.
 - `https://www.ptstrans.pl/` przekierowuje na domenę główną albo również serwuje stronę, zależnie od ustawień GitHub Pages.
+
+Jeśli HTTPS zwraca błąd certyfikatu zaraz po zmianie DNS, odczekaj na wystawienie certyfikatu GitHub Pages i dopiero wtedy włącz wymuszenie HTTPS:
+
+```bash
+gh api -X PUT repos/ghawdexpro/pts-trans-preview/pages -F https_enforced=true
+```
