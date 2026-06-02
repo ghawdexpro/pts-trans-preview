@@ -48,8 +48,8 @@ Sprawdzone viewporty:
 Wyniki:
 
 - brak poziomego scrolla na desktop i mobile
-- desktop ładuje poziome hero `assets/hero-next-day-map.webp` bez mapy w pierwszym ekranie
-- mobile ładuje pionowe hero `assets/hero-next-day-map-mobile.webp` bez mapy w pierwszym ekranie
+- desktop ładuje poziome hero `assets/hero-next-day-map.webp` z osobnym overlayem trasy
+- mobile ładuje pionowe hero `assets/hero-next-day-map-mobile.webp` z osobnym overlayem trasy
 - wygenerowany napis w hero mieści się w kadrze mobile bez ręcznej nakładki HTML
 - stały header ma własny offset strony i nie przykrywa treści hero ani sekcji po wejściu z menu
 - menu mobilne otwiera się poprawnie, ustawia `aria-expanded="true"` i klasę `is-open`
@@ -59,6 +59,13 @@ Wyniki:
 - treść zawiera główne komunikaty: `Warszawa`, `Wiedeń`, `Next Day`, `B2B`, `Wien Cargo`, `Vienna Cargo Airport`
 - panel `Dane firmy` mieści się na mobile `390x844` i desktop `1280x720` bez poziomego scrolla
 - hero pokazuje trasę bez osobnej odnogi `CARGO`; komunikat o codziennych odbiorach z `Wien Cargo / Vienna Cargo Airport` jest w sekcji lotnisk
+
+## Backlog stylistyczny
+
+- Dodać subtelny efekt ruchu statycznych obrazów w tle: delikatny pan/zoom, jak niewielki ruch kamery po nieruchomym zdjęciu. Efekt powinien działać głównie na hero i dużych sekcjach obrazowych, bez przesuwania treści UI.
+- Implementacja powinna używać CSS transform na warstwie obrazu, np. wolne `scale` + `translate`, z `overflow: hidden` na kontenerze i bez zmiany layoutu.
+- Dodać zabezpieczenie `@media (prefers-reduced-motion: reduce)`, które całkowicie wyłącza animację.
+- Przetestować na mobile, bo przy złym kadrowaniu taki efekt może odsłonić puste krawędzie albo uciąć auta/napisy.
 
 ## Do domknięcia
 
