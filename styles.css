@@ -1366,3 +1366,280 @@ body {
     font-size: 46px;
   }
 }
+
+/* Polish pass: contrast, section rhythm, fixed-header safety */
+html {
+  scroll-padding-top: 86px;
+}
+
+body {
+  background: #f3f6fb;
+}
+
+section {
+  scroll-margin-top: 86px;
+}
+
+.site-header {
+  background: rgba(7, 18, 37, 0.72);
+  backdrop-filter: blur(18px);
+}
+
+.site-header.is-scrolled,
+.site-header.is-open {
+  background: rgba(7, 18, 37, 0.98);
+}
+
+.site-nav a,
+.brand-text,
+.header-call,
+.button {
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.34);
+}
+
+.hero {
+  min-height: auto;
+  background: #071225;
+}
+
+.hero-content {
+  padding-top: clamp(116px, 14vh, 156px);
+  padding-bottom: clamp(44px, 7vh, 76px);
+}
+
+.hero h1 {
+  max-width: 940px;
+  font-size: clamp(54px, 7.1vw, 92px);
+  line-height: 0.98;
+}
+
+.hero-copy {
+  max-width: 760px;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(5, 14, 30, 0.98) 0%, rgba(5, 14, 30, 0.86) 42%, rgba(5, 14, 30, 0.34) 100%),
+    linear-gradient(0deg, rgba(5, 14, 30, 0.96) 0%, rgba(5, 14, 30, 0.14) 72%);
+}
+
+.eyebrow {
+  color: #ffffff;
+  text-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);
+}
+
+.eyebrow.dark {
+  color: #0f3d8f;
+  text-shadow: none;
+}
+
+.eyebrow.light {
+  color: #ffffff;
+}
+
+.intro-band {
+  background: linear-gradient(135deg, #c82019, #ef3528);
+}
+
+.intro-grid span {
+  color: #ffffff;
+}
+
+#produkt.section,
+.fleet-section {
+  background: #f3f6fb;
+  box-shadow: 0 0 0 100vmax #f3f6fb;
+  clip-path: inset(0 -100vmax);
+}
+
+.section-heading h2,
+.section-heading p:not(.eyebrow) {
+  color: #101b31;
+}
+
+.section-heading p:not(.eyebrow) {
+  color: #344054;
+}
+
+.service-card {
+  min-height: 260px;
+  background: #ffffff;
+}
+
+.service-card p {
+  color: #475467;
+}
+
+.operations-section,
+.airport-section,
+.routes-section,
+.contact-section {
+  overflow: hidden;
+}
+
+.operations-copy p:not(.eyebrow),
+.operations-grid p,
+.airport-copy p,
+.routes-copy p,
+.contact-copy p,
+.airport-list li,
+.fleet-card p {
+  color: #e4edff;
+}
+
+.operations-grid article {
+  background: linear-gradient(180deg, rgba(16, 38, 66, 0.92), rgba(9, 23, 45, 0.96));
+}
+
+.route-list strong {
+  color: #ffe2df;
+}
+
+.contact-link {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.contact-link span {
+  color: #d8e7ff;
+}
+
+.contact-link strong {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 980px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  section {
+    scroll-margin-top: 76px;
+  }
+
+  .section-heading {
+    gap: 20px;
+  }
+
+  .airport-section,
+  .routes-section,
+  .contact-section {
+    align-items: start;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  section {
+    scroll-margin-top: 70px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-content {
+    width: min(100% - 32px, 1120px);
+    padding-top: 108px;
+    padding-bottom: 34px;
+  }
+
+  .hero h1 {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 1.02;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.42;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .route-strip {
+    margin-top: 22px;
+  }
+
+  .hero-facts {
+    margin-top: 24px;
+  }
+
+  .intro-grid div {
+    min-height: auto;
+    padding: 24px 0;
+  }
+
+  .section,
+  .operations-section,
+  .airport-section,
+  .routes-section,
+  .contact-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading .eyebrow {
+    margin-bottom: 12px;
+  }
+
+  .section-heading h2,
+  .operations-copy h2,
+  .airport-copy h2,
+  .routes-copy h2,
+  .contact-copy h2 {
+    font-size: 32px;
+    line-height: 1.06;
+  }
+
+  .section-heading p:not(.eyebrow),
+  .operations-copy p:not(.eyebrow),
+  .airport-copy p,
+  .routes-copy p,
+  .contact-copy p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .service-card h3 {
+    margin-top: 38px;
+  }
+
+  .operations-section::before {
+    font-size: 38px;
+    opacity: 0.72;
+  }
+
+  .routes-section {
+    gap: 34px;
+  }
+
+  .route-list li {
+    display: grid;
+    gap: 8px;
+  }
+
+  .route-list strong {
+    white-space: normal;
+  }
+
+  .fleet-card div {
+    min-height: auto;
+  }
+}
