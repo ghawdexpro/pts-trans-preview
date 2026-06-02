@@ -1806,6 +1806,67 @@ section {
     linear-gradient(90deg, rgba(5, 14, 30, 0.08) 0%, rgba(5, 14, 30, 0.02) 58%, rgba(5, 14, 30, 0.16) 100%);
 }
 
+.hero-route-map {
+  position: absolute;
+  z-index: 1;
+  top: clamp(84px, 11vh, 132px);
+  right: max(18px, calc((100vw - 1180px) / 2));
+  width: min(44vw, 540px);
+  min-width: 360px;
+  opacity: 0.9;
+  pointer-events: none;
+  filter: drop-shadow(0 22px 46px rgba(0, 0, 0, 0.34));
+}
+
+.hero-route-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.hero-route-map .map-line {
+  fill: none;
+  stroke: rgba(167, 196, 232, 0.18);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.hero-route-map .route-line,
+.hero-route-map .route-branch {
+  fill: none;
+  stroke: var(--route-red);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: url(#routeGlow);
+}
+
+.hero-route-map .route-line {
+  stroke-width: 7;
+}
+
+.hero-route-map .route-branch {
+  stroke-width: 5;
+  opacity: 0.92;
+}
+
+.hero-route-map .route-point circle {
+  fill: var(--route-red);
+  stroke: #ffffff;
+  stroke-width: 5;
+  filter: url(#routeGlow);
+}
+
+.hero-route-map .route-point text {
+  fill: #ffffff;
+  paint-order: stroke;
+  stroke: rgba(5, 14, 30, 0.86);
+  stroke-width: 5;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
 .hero-generated .hero-content {
   justify-content: end;
   padding-top: clamp(410px, 57svh, 560px);
@@ -2050,6 +2111,23 @@ body {
 }
 
 @media (max-width: 640px) {
+  .hero-route-map {
+    top: 302px;
+    right: -94px;
+    width: 440px;
+    min-width: 0;
+    opacity: 0.76;
+  }
+
+  .hero-route-map .route-point text {
+    font-size: 18px;
+  }
+
+  .hero-route-map .route-bts text,
+  .hero-route-map .route-cargo text {
+    display: none;
+  }
+
   .hero-generated .hero-content {
     padding-top: 34px;
   }

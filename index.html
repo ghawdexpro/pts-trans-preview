@@ -21,7 +21,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#0f3d8f">
     <link rel="preload" as="image" href="assets/hero-next-day-map.webp" type="image/webp">
-    <link rel="stylesheet" href="styles.css?v=20260602-route-images">
+    <link rel="stylesheet" href="styles.css?v=20260602-hero-route">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -84,6 +84,44 @@
           </picture>
         </div>
         <div class="hero-overlay"></div>
+        <div class="hero-route-map" aria-hidden="true">
+          <svg viewBox="0 0 520 360" role="img" focusable="false">
+            <defs>
+              <filter id="routeGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+                <feMerge>
+                  <feMergeNode in="blur"></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+            </defs>
+            <path class="map-line" d="M54 78 C108 52 150 74 190 42 C244 0 301 32 356 28 C412 24 455 54 496 34"></path>
+            <path class="map-line" d="M72 188 C122 158 156 202 208 178 C252 158 284 126 332 142 C386 160 420 128 480 144"></path>
+            <path class="map-line" d="M36 288 C96 266 142 286 188 250 C232 216 278 236 326 208 C380 178 428 206 504 182"></path>
+            <path class="route-line" d="M382 58 C360 98 332 118 315 154 C302 184 272 196 244 220 C220 242 206 266 184 306"></path>
+            <path class="route-branch" d="M244 220 C284 228 318 246 358 272"></path>
+            <g class="route-point route-waw">
+              <circle cx="382" cy="58" r="11"></circle>
+              <text x="402" y="62">WARSZAWA</text>
+            </g>
+            <g class="route-point route-brno">
+              <circle cx="315" cy="154" r="9"></circle>
+              <text x="334" y="160">BRNO</text>
+            </g>
+            <g class="route-point route-bts">
+              <circle cx="244" cy="220" r="9"></circle>
+              <text x="260" y="226">BRATYSŁAWA</text>
+            </g>
+            <g class="route-point route-vie">
+              <circle cx="184" cy="306" r="10"></circle>
+              <text x="204" y="312">WIEDEŃ</text>
+            </g>
+            <g class="route-point route-cargo">
+              <circle cx="358" cy="272" r="8"></circle>
+              <text x="376" y="278">CARGO</text>
+            </g>
+          </svg>
+        </div>
 
         <div class="hero-content">
           <p class="eyebrow" data-i18n="hero.eyebrow">Spedycja 24h • WAW → BTS / VIE</p>
