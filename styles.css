@@ -1462,6 +1462,17 @@ section {
   color: #344054;
 }
 
+.section-heading.compact .eyebrow,
+.fleet-section .section-heading .eyebrow {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.section-heading.compact h2,
+.fleet-section .section-heading h2 {
+  margin-top: 0;
+}
+
 .service-card {
   min-height: 260px;
   background: #ffffff;
@@ -1591,6 +1602,11 @@ section {
 
   .section-heading .eyebrow {
     margin-bottom: 12px;
+  }
+
+  .section-heading.compact .eyebrow,
+  .fleet-section .section-heading .eyebrow {
+    margin-bottom: 14px;
   }
 
   .section-heading h2,
