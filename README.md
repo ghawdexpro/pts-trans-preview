@@ -22,6 +22,8 @@ Aktualnie strona jest publikowana jako statyczna witryna przez GitHub Pages:
 
 Strona nie wymaga backendu. Przyciski kontaktowe używają telefonu i emaila. Konfiguracja domeny `ptstrans.pl` w GitHub Pages i DNS lh.pl jest opisana w [docs/domain-setup.md](docs/domain-setup.md).
 
+Aktualny raport kontroli produkcyjnej jest w [docs/production-qa.md](docs/production-qa.md).
+
 ## Hero
 
 Aktualna grafika renderowana na stronie to zoptymalizowany `assets/hero-next-day-map.webp`. Pliki `assets/hero-next-day-map.jpg` i `assets/hero-next-day-map.png` zostają jako wersje źródłowe/fallback oraz podgląd Open Graph. Grafika pokazuje flotę, mapę Warszawa-Wiedeń, lotniska WWA/Vienna Airport i branding PTS-TRANS.
