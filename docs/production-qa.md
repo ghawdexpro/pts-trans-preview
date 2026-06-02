@@ -35,6 +35,7 @@ Wykonane kontrole:
 - linki `tel:` i `mailto:` są obecne
 - kotwice istnieją: `#produkt`, `#next-day`, `#trasy`, `#lotniska`, `#flota`, `#kontakt`
 - dane firmy są widoczne w sekcji kontaktu: `PTS TRANS`, `Sławomir Szambelan`, `ul. Wakacyjna 3`, `05-090 Raszyn / Rybie`, `Trans nr: 303457-1`
+- baza i magazyn są widoczne w panelu firmowym: `ul. Jaworskiego 8, 05-090 Raszyn`
 - JSON-LD zawiera adres firmy, właściciela, email `PTS.Trans@wp.pl` i numer telefonu `+48601302011`
 
 ## QA wizualne
@@ -55,8 +56,9 @@ Wyniki:
 - sekcja floty nie nachodzi już nagłówkiem na etykietę `FLOTA NA RELACJĘ`
 - obrandowane obrazy floty ładują się poprawnie po przewinięciu
 - obrazy tras ładują się poprawnie po przewinięciu
-- treść zawiera główne komunikaty: `Warszawa`, `Wiedeń`, `Next Day`, `B2B`, `WWA`, `CARGO`, `Vienna Airport`
+- treść zawiera główne komunikaty: `Warszawa`, `Wiedeń`, `Next Day`, `B2B`, `Wien Cargo`, `Vienna Cargo Airport`
 - panel `Dane firmy` mieści się na mobile `390x844` i desktop `1280x720` bez poziomego scrolla
+- hero pokazuje trasę bez osobnej odnogi `CARGO`; komunikat o codziennych odbiorach z `Wien Cargo / Vienna Cargo Airport` jest w sekcji lotnisk
 
 ## Do domknięcia
 

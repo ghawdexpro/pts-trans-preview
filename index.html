@@ -6,7 +6,7 @@
     <title>PTS TRANS | Wiedeń i Bratysława Next Day B2B</title>
     <meta
       name="description"
-      content="PTS TRANS: codzienne dostawy Next Day Service dla firm na relacjach Warszawa - Wiedeń i Warszawa - Bratysława. Palety, części i cargo lotnicze."
+      content="PTS TRANS: codzienne dostawy Next Day Service dla firm na relacjach Warszawa - Wiedeń i Warszawa - Bratysława. Palety, części i codzienne odbiory z Wien Cargo / Vienna Cargo Airport."
     >
     <meta name="robots" content="index, follow">
     <meta name="format-detection" content="telephone=yes">
@@ -15,13 +15,13 @@
     <meta property="og:locale" content="pl_PL">
     <meta property="og:site_name" content="PTS TRANS">
     <meta property="og:title" content="PTS TRANS | Wiedeń i Bratysława Next Day B2B">
-    <meta property="og:description" content="Codzienne dostawy Next Day Service dla firm: Warszawa - Wiedeń oraz Warszawa - Bratysława. Palety, części i cargo.">
+    <meta property="og:description" content="Codzienne dostawy Next Day Service dla firm: Warszawa - Wiedeń oraz Warszawa - Bratysława. Palety, części i odbiory z Wien Cargo.">
     <meta property="og:url" content="https://ptstrans.pl/">
     <meta property="og:image" content="https://ptstrans.pl/assets/hero-next-day-map.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#0f3d8f">
     <link rel="preload" as="image" href="assets/hero-next-day-map.webp" type="image/webp">
-    <link rel="stylesheet" href="styles.css?v=20260602-hero-route">
+    <link rel="stylesheet" href="styles.css?v=20260602-vienna-cargo-base">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,8 +43,19 @@
         },
         "identifier": "Trans nr: 303457-1",
         "areaServed": ["Polska", "Czechy", "Słowacja", "Austria"],
-        "serviceType": ["Warszawa-Wiedeń Next Day Service", "Warszawa-Bratysława Next Day Service", "Transport B2B", "Transport palet", "Obsługa cargo lotniczego"],
-        "description": "PTS TRANS obsługuje transport B2B i codzienne dostawy Next Day Service na relacjach Warszawa - Wiedeń oraz Warszawa - Bratysława, w tym palety, części i cargo lotnicze."
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Baza i magazyn PTS TRANS",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Jaworskiego 8",
+            "postalCode": "05-090",
+            "addressLocality": "Raszyn",
+            "addressCountry": "PL"
+          }
+        },
+        "serviceType": ["Warszawa-Wiedeń Next Day Service", "Warszawa-Bratysława Next Day Service", "Transport B2B", "Transport palet", "Odbiory z Wien Cargo", "Vienna Cargo Airport"],
+        "description": "PTS TRANS obsługuje transport B2B i codzienne dostawy Next Day Service na relacjach Warszawa - Wiedeń oraz Warszawa - Bratysława, w tym palety, części i codzienne odbiory z Wien Cargo / Vienna Cargo Airport."
       }
     </script>
   </head>
@@ -99,7 +110,6 @@
             <path class="map-line" d="M72 188 C122 158 156 202 208 178 C252 158 284 126 332 142 C386 160 420 128 480 144"></path>
             <path class="map-line" d="M36 288 C96 266 142 286 188 250 C232 216 278 236 326 208 C380 178 428 206 504 182"></path>
             <path class="route-line" d="M382 58 C360 98 332 118 315 154 C302 184 272 196 244 220 C220 242 206 266 184 306"></path>
-            <path class="route-branch" d="M244 220 C284 228 318 246 358 272"></path>
             <g class="route-point route-waw">
               <circle cx="382" cy="58" r="11"></circle>
               <text x="402" y="62">WARSZAWA</text>
@@ -115,10 +125,6 @@
             <g class="route-point route-vie">
               <circle cx="184" cy="306" r="10"></circle>
               <text x="204" y="312">WIEDEŃ</text>
-            </g>
-            <g class="route-point route-cargo">
-              <circle cx="358" cy="272" r="8"></circle>
-              <text x="376" y="278">CARGO</text>
             </g>
           </svg>
         </div>
@@ -155,7 +161,7 @@
             </div>
             <div>
               <dt data-i18n="hero.fact3Label">Punkty</dt>
-              <dd data-i18n="hero.fact3Value">WWA, Brno, Bratysława, CARGO</dd>
+              <dd data-i18n="hero.fact3Value">Brno, Bratysława, Wien Cargo</dd>
             </div>
           </dl>
         </div>
@@ -202,8 +208,8 @@
           </article>
           <article class="service-card">
             <span class="service-number">03</span>
-            <h3 data-i18n="service.airportsTitle">Lotniska WWA/VIE</h3>
-            <p data-i18n="service.airportsCopy">Odbiory i dostawy przy lotniskach warszawskich oraz Vienna Airport.</p>
+            <h3 data-i18n="service.airportsTitle">Wien Cargo</h3>
+            <p data-i18n="service.airportsCopy">Codzienne odbiory z Vienna Cargo Airport i transport dalej do firm.</p>
           </article>
           <article class="service-card">
             <span class="service-number">04</span>
@@ -238,7 +244,7 @@
           <article>
             <span>CHECKPOINT 03</span>
             <h3 data-i18n="next.deliveryTitle">Dostawa BTS/VIE</h3>
-            <p data-i18n="next.deliveryCopy">Dostawa następnego dnia do Bratysławy, Wiednia, Vienna Airport lub punktu B2B w okolicy.</p>
+            <p data-i18n="next.deliveryCopy">Dostawa następnego dnia do Bratysławy, Wiednia lub punktu B2B w okolicy.</p>
           </article>
         </div>
       </section>
@@ -248,15 +254,18 @@
           <img src="assets/hero-next-day-map.webp" alt="Flota PTS TRANS przy terminalu cargo na trasie Warszawa-Wiedeń" width="1672" height="941" loading="lazy">
         </div>
         <div class="airport-copy">
-          <p class="eyebrow light" data-i18n="airports.eyebrow">Cargo na osi WAW-VIE</p>
-          <h2 id="airport-title" data-i18n="airports.title">Lotniska warszawskie i Vienna Airport jako punkty trasy</h2>
+          <p class="eyebrow light" data-i18n="airports.eyebrow">Wien Cargo</p>
+          <h2 id="airport-title" data-i18n="airports.title">Vienna Cargo Airport jako stały punkt odbioru</h2>
           <p data-i18n="airports.copy">
-            Dla cargo lotniczego czas odbioru i komunikacja są krytyczne. PTS TRANS obsługuje ładunki
-            powiązane z lotniskami WWA oraz Vienna Airport jako element stałych relacji Warszawa-Bratysława i Warszawa-Wiedeń.
+            Dla cargo lotniczego kluczowy jest szybki odbiór po stronie Wiednia. PTS TRANS jest codziennie
+            na Wien Cargo / Vienna Cargo Airport i zabiera ładunki dalej na trasę do firm w Polsce, Czechach i Słowacji.
+          </p>
+          <p class="airport-callout" data-i18n="airports.callout">
+            Główny kierunek cargo: odbiór z Wien Cargo / Vienna Cargo Airport i szybka dostawa do klienta B2B.
           </p>
           <ul class="airport-list">
-            <li data-i18n="airports.item1">Okna odbioru przy lotniskach i magazynach cargo.</li>
-            <li data-i18n="airports.item2">Części, paczki techniczne, palety i przesyłki czasowe.</li>
+            <li data-i18n="airports.item1">Codzienne odbiory z Wien Cargo / Vienna Cargo Airport.</li>
+            <li data-i18n="airports.item2">Części, paczki techniczne, palety i przesyłki czasowe z Wiednia.</li>
             <li data-i18n="airports.item3">Bezpośrednia informacja operacyjna: co, skąd, dokąd i na kiedy.</li>
           </ul>
         </div>
@@ -268,12 +277,12 @@
           <h2 data-i18n="routes.title">Dwie główne relacje next day, jeden rytm operacyjny</h2>
           <p data-i18n="routes.copy">
             Warszawa-Wiedeń i Warszawa-Bratysława są równorzędnymi produktami. Brno jest naturalnym punktem po drodze,
-            a lotniska WWA i Vienna Airport zamieniają relacje w konkretną usługę dla cargo i produkcji.
+            a Wien Cargo / Vienna Cargo Airport jest stałym punktem odbioru dla cargo i produkcji.
           </p>
           <ul class="route-list">
             <li><span data-i18n="routes.vienna">Warszawa - Wiedeń</span><strong data-i18n="routes.nextTag">next day</strong></li>
             <li><span data-i18n="routes.bratislava">Warszawa - Bratysława</span><strong data-i18n="routes.nextTag">next day</strong></li>
-            <li><span data-i18n="routes.airports">Lotniska WWA - Vienna Airport</span><strong data-i18n="routes.cargoTag">B2B cargo</strong></li>
+            <li><span data-i18n="routes.airports">Wien Cargo - odbiór z Wiednia</span><strong data-i18n="routes.cargoTag">B2B cargo</strong></li>
             <li><span data-i18n="routes.brno">Brno, Czechy</span><strong data-i18n="routes.urgentTag">pilne B2B</strong></li>
           </ul>
         </div>
@@ -336,7 +345,7 @@
           <h2 data-i18n="contact.title">Podaj ładunek. Potwierdzimy trasę do Wiednia albo Bratysławy.</h2>
           <p data-i18n="contact.copy">
             W zapytaniu podaj punkt odbioru, punkt dostawy, godzinę gotowości, wymiary, wagę oraz liczbę
-            palet lub paczek. Najszybciej potwierdzimy zlecenia na relacjach WAW-VIE, WAW-BTS i przy lotniskach.
+            palet lub paczek. Najszybciej potwierdzimy zlecenia na relacjach WAW-VIE, WAW-BTS i z odbiorem z Wien Cargo.
           </p>
         </div>
 
@@ -368,6 +377,7 @@
             <p data-i18n="company.address1">ul. Wakacyjna 3</p>
             <p data-i18n="company.address2">05-090 Raszyn / Rybie</p>
             <p data-i18n="company.trans">Trans nr: 303457-1</p>
+            <p class="company-base" data-i18n="company.base">Baza i magazyn: ul. Jaworskiego 8, 05-090 Raszyn</p>
             <p class="company-trust" data-i18n="company.trust">Uczestnik Programu RZETELNA Firma</p>
           </div>
         </div>
