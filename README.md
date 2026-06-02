@@ -10,19 +10,17 @@ Statyczna strona informacyjna firmy transportowej PTS-TRANS.
 - `i18n.js` - manifest języków i polski słownik startowy
 - `assets/` - lokalne zdjęcia aut, grafik tras i wygenerowana grafika hero
 
-## Publikacja przez Cloudflare
+## Publikacja
 
-Najprościej opublikować jako statyczną stronę:
+Aktualnie strona jest publikowana jako statyczna witryna przez GitHub Pages:
 
-1. Wrzucić repozytorium do GitHub.
-2. W Cloudflare Pages utworzyć projekt z tego repozytorium.
-3. Build command zostawić pusty.
-4. Output directory ustawić na `/`.
-5. Po publikacji podpiąć domenę `ptstrans.pl` w Cloudflare Pages.
+- repozytorium: `ghawdexpro/pts-trans-preview`
+- gałąź: `main`
+- katalog publikacji: `/`
+- domena techniczna: `https://ghawdexpro.github.io/pts-trans-preview/`
+- domena produkcyjna: `https://ptstrans.pl/`
 
-Strona nie wymaga backendu. Przyciski kontaktowe używają telefonu i emaila.
-
-Uwaga: Cloudflare Pages i DNS mogą obsłużyć domenę `ptstrans.pl`, ale Cloudflare Registrar nie rejestruje obecnie rozszerzenia `.pl`. Domenę trzeba kupić u rejestratora obsługującego `.pl`, a potem dodać ją w Cloudflare.
+Strona nie wymaga backendu. Przyciski kontaktowe używają telefonu i emaila. Konfiguracja domeny `ptstrans.pl` w GitHub Pages i DNS lh.pl jest opisana w [docs/domain-setup.md](docs/domain-setup.md).
 
 ## Hero
 
