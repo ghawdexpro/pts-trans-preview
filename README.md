@@ -1,6 +1,6 @@
-# PTS-TRANS
+# PTS TRANS
 
-Statyczna strona informacyjna firmy transportowej PTS-TRANS.
+Statyczna strona informacyjna firmy transportowej PTS TRANS.
 
 ## Zawartość
 
@@ -26,7 +26,7 @@ Aktualny raport kontroli produkcyjnej jest w [docs/production-qa.md](docs/produc
 
 ## Hero
 
-Aktualna grafika renderowana na stronie to zoptymalizowany `assets/hero-next-day-map.webp`. Pliki `assets/hero-next-day-map.jpg` i `assets/hero-next-day-map.png` zostają jako wersje źródłowe/fallback oraz podgląd Open Graph. Grafika pokazuje flotę, mapę Warszawa-Wiedeń, lotniska WWA/Vienna Airport i branding PTS-TRANS.
+Aktualne grafiki hero renderowane na stronie to zoptymalizowane `assets/hero-next-day-map.webp` dla desktopu oraz `assets/hero-next-day-map-mobile.webp` dla telefonów. Pliki PNG/JPG zostają jako wersje źródłowe/fallback oraz podgląd Open Graph. Grafiki pokazują flotę, mapę Warszawa-Brno-Bratysława-Wiedeń, oznaczenie CARGO i branding PTS TRANS.
 
 ## Języki
 

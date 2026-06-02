@@ -15,16 +15,16 @@ window.PTSTRANS_I18N = {
   ],
   meta: {
     pl: {
-      title: "PTS-TRANS | Warszawa-Wiedeń Next Day B2B",
+      title: "PTS TRANS | Warszawa-Wiedeń Next Day B2B",
       description:
-        "PTS-TRANS: stała relacja Warszawa-Wiedeń dla firm. Next Day Service, palety, części i cargo lotnicze z obsługą lotnisk WWA oraz Vienna Airport.",
+        "PTS TRANS: codzienne dostawy Warszawa - Brno - Bratysława - Wiedeń - Warszawa dla firm. Next Day Service, palety, części i cargo lotnicze.",
       ogDescription:
-        "Stała relacja Warszawa-Wiedeń dla firm. Next Day Service, palety, części, lotniska WWA i Vienna Airport.",
+        "Codzienne dostawy Warszawa - Brno - Bratysława - Wiedeń - Warszawa dla firm. Next Day Service, palety, części i cargo.",
     },
   },
   translations: {
     pl: {
-      "brand.name": "PTS-TRANS",
+      "brand.name": "PTS TRANS",
       "nav.open": "Otwórz menu",
       "nav.close": "Zamknij menu",
       "nav.offer": "Oferta",
@@ -33,8 +33,8 @@ window.PTSTRANS_I18N = {
       "nav.airports": "Lotniska",
       "nav.fleet": "Flota",
       "nav.contact": "Kontakt",
-      "hero.eyebrow": "Stała relacja B2B • Warszawa - Wiedeń",
-      "hero.title": "Warszawa-Wiedeń Next Day",
+      "hero.eyebrow": "Stała relacja B2B • Warszawa - Brno - Bratysława - Wiedeń",
+      "hero.title": "Codzienne dostawy Warszawa - Brno - Bratysława - Wiedeń - Warszawa",
       "hero.copy":
         "Next Day Service dla firm na osi Warszawa-Wiedeń. Palety, części, paczki i cargo lotnicze jadą trasą z zaplanowanym odpoczynkiem kierowców, krótkim oknem odbioru i dostawą następnego dnia.",
       "hero.ctaCall": "Zleć trasę WAW-VIE",
@@ -44,7 +44,7 @@ window.PTSTRANS_I18N = {
       "hero.fact2Label": "Tryb",
       "hero.fact2Value": "Next Day Service",
       "hero.fact3Label": "Punkty",
-      "hero.fact3Value": "WWA, Brno, Vienna Airport",
+      "hero.fact3Value": "WWA, Brno, Bratysława, CARGO",
       "intro.b2bTitle": "WAW → VIE",
       "intro.b2bCopy": "stała relacja dla firm, magazynów i cargo",
       "intro.nextTitle": "Next Day Service",
@@ -54,7 +54,7 @@ window.PTSTRANS_I18N = {
       "offer.eyebrow": "Dla kogo",
       "offer.title": "Ładunki, które muszą dojechać jutro na relacji Warszawa-Wiedeń",
       "offer.copy":
-        "PTS-TRANS obsługuje firmy, które nie mogą czekać na przypadkową spedycję: produkcję, magazyny, operatorów cargo, serwisy i dystrybucję. Trasa WAW-VIE jest osią oferty, a Brno i Bratysława pracują jako punkty wspierające po drodze.",
+        "PTS TRANS obsługuje firmy, które nie mogą czekać na przypadkową spedycję: produkcję, magazyny, operatorów cargo, serwisy i dystrybucję. Trasa WAW-VIE jest osią oferty, a Brno i Bratysława pracują jako punkty wspierające po drodze.",
       "service.palletsTitle": "Palety na jutro",
       "service.palletsCopy":
         "Pojedyncze palety i większe partie towaru, także autami do 15 palet EUR.",
@@ -70,7 +70,7 @@ window.PTSTRANS_I18N = {
       "next.eyebrow": "Jak działa trasa",
       "next.title": "Next day nie jest hasłem. To ustawiona relacja i punkty odpoczynku.",
       "next.copy":
-        "Na trasie Warszawa-Wiedeń liczy się nie tylko auto, ale też rytm pracy kierowcy. PTS-TRANS wykorzystuje zaplecze noclegowe po drodze, żeby planować odpoczynek zgodnie z wymogami i utrzymać realną gotowość do pilnych transportów.",
+        "Na trasie Warszawa-Wiedeń liczy się nie tylko auto, ale też rytm pracy kierowcy. PTS TRANS wykorzystuje zaplecze noclegowe po drodze, żeby planować odpoczynek zgodnie z wymogami i utrzymać realną gotowość do pilnych transportów.",
       "next.restTitle": "Odbiór WAW",
       "next.restCopy": "Szybkie przejęcie ładunku od firmy, magazynu albo lotniska i dobór auta do zlecenia.",
       "next.reactionTitle": "Trasa przez Brno",
@@ -81,7 +81,7 @@ window.PTSTRANS_I18N = {
       "airports.eyebrow": "Cargo na osi WAW-VIE",
       "airports.title": "Lotniska warszawskie i Vienna Airport jako punkty trasy",
       "airports.copy":
-        "Dla cargo lotniczego czas odbioru i komunikacja są krytyczne. PTS-TRANS obsługuje ładunki powiązane z lotniskami WWA oraz Vienna Airport jako element stałej relacji Warszawa-Wiedeń.",
+        "Dla cargo lotniczego czas odbioru i komunikacja są krytyczne. PTS TRANS obsługuje ładunki powiązane z lotniskami WWA oraz Vienna Airport jako element stałej relacji Warszawa-Wiedeń.",
       "airports.item1": "Okna odbioru przy lotniskach i magazynach cargo.",
       "airports.item2": "Części, paczki techniczne, palety i przesyłki czasowe.",
       "airports.item3": "Bezpośrednia informacja operacyjna: co, skąd, dokąd i na kiedy.",
@@ -115,7 +115,7 @@ window.PTSTRANS_I18N = {
       "contact.phone": "Telefon",
       "contact.email": "Email",
       "contact.domain": "Domena",
-      "footer.tagline": "PTS-TRANS • Next Day Service B2B",
+      "footer.tagline": "PTS TRANS • Next Day Service B2B",
       "footer.top": "Do góry",
     },
   },

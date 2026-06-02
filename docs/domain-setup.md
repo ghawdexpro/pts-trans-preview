@@ -1,6 +1,6 @@
 # Konfiguracja domeny ptstrans.pl
 
-Strona PTS-TRANS jest hostowana na GitHub Pages w repozytorium:
+Strona PTS TRANS jest hostowana na GitHub Pages w repozytorium:
 
 - `ghawdexpro/pts-trans-preview`
 - docelowa domena: `https://ptstrans.pl/`
@@ -82,7 +82,7 @@ curl -I https://www.ptstrans.pl/
 
 Oczekiwane:
 
-- `https://ptstrans.pl/` zwraca stronę PTS-TRANS.
+- `https://ptstrans.pl/` zwraca stronę PTS TRANS.
 - `https://www.ptstrans.pl/` przekierowuje na domenę główną albo również serwuje stronę, zależnie od ustawień GitHub Pages.
 
 Jeśli HTTPS zwraca błąd certyfikatu zaraz po zmianie DNS, odczekaj na wystawienie certyfikatu GitHub Pages i dopiero wtedy włącz wymuszenie HTTPS:

@@ -193,9 +193,17 @@ main:focus-visible {
   transform: scale(1.02);
 }
 
+.hero-media picture,
 .hero-media img {
   width: 100%;
   height: 100%;
+}
+
+.hero-media picture {
+  display: block;
+}
+
+.hero-media img {
   object-fit: cover;
   object-position: center;
 }
@@ -1677,5 +1685,100 @@ section {
 
   .hero-copy {
     font-size: 16px;
+  }
+}
+
+/* Generated hero image: the raster contains the main visual text. */
+.hero-generated {
+  min-height: min(94svh, 940px);
+}
+
+.hero-generated .eyebrow,
+.hero-generated h1,
+.hero-generated .hero-copy {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.hero-generated .hero-media img {
+  object-position: center center;
+  filter: saturate(1.04) contrast(1.03);
+}
+
+.hero-generated .hero-overlay {
+  background:
+    linear-gradient(0deg, rgba(5, 14, 30, 0.74) 0%, rgba(5, 14, 30, 0.18) 42%, rgba(5, 14, 30, 0.04) 100%),
+    linear-gradient(90deg, rgba(5, 14, 30, 0.08) 0%, rgba(5, 14, 30, 0.02) 58%, rgba(5, 14, 30, 0.16) 100%);
+}
+
+.hero-generated .hero-content {
+  justify-content: end;
+  padding-top: clamp(410px, 57svh, 560px);
+  padding-bottom: clamp(32px, 6vh, 72px);
+}
+
+.hero-generated .hero-actions,
+.hero-generated .route-strip,
+.hero-generated .hero-facts {
+  max-width: 760px;
+}
+
+.hero-generated .hero-actions {
+  margin-top: 0;
+}
+
+.hero-generated .route-strip {
+  background: rgba(7, 18, 37, 0.72);
+}
+
+.hero-generated .hero-facts {
+  background: rgba(7, 18, 37, 0.54);
+}
+
+@media (max-width: 760px) {
+  .hero-generated {
+    min-height: 850px;
+  }
+
+  .hero-generated .hero-media img {
+    object-fit: contain;
+    object-position: top center;
+  }
+
+  .hero-generated .hero-overlay {
+    background:
+      linear-gradient(0deg, rgba(5, 14, 30, 0.92) 0%, rgba(5, 14, 30, 0.4) 38%, rgba(5, 14, 30, 0.02) 72%);
+  }
+
+  .hero-generated .hero-content {
+    padding-top: 500px;
+    padding-bottom: 34px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-generated {
+    min-height: 820px;
+  }
+
+  .hero-generated .hero-content {
+    width: min(100% - 28px, 1120px);
+    padding-top: 430px;
+  }
+
+  .hero-generated .hero-actions {
+    gap: 10px;
+  }
+
+  .hero-generated .button {
+    min-height: 48px;
+    padding-inline: 16px;
+    font-size: 13px;
   }
 }
