@@ -1643,3 +1643,23 @@ section {
     min-height: auto;
   }
 }
+
+@media (max-width: 360px) {
+  .eyebrow {
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  .eyebrow::before {
+    width: 22px;
+    margin-right: 8px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-copy {
+    font-size: 16px;
+  }
+}
