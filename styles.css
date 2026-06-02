@@ -669,6 +669,47 @@ main:focus-visible {
   overflow-wrap: anywhere;
 }
 
+.company-card {
+  display: grid;
+  gap: 4px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 4px solid var(--route-red);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(7, 18, 37, 0.84), rgba(14, 35, 70, 0.72)),
+    rgba(255, 255, 255, 0.07);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+}
+
+.company-card span {
+  margin-bottom: 8px;
+  color: #bdd5ff;
+  font-size: 13px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.company-card strong {
+  color: var(--white);
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.company-card p {
+  margin: 0;
+  color: #d7e5ff;
+  line-height: 1.35;
+}
+
+.company-card .company-trust {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  font-weight: 800;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;

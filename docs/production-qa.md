@@ -34,6 +34,8 @@ Wykonane kontrole:
 - brak błędów i ostrzeżeń w konsoli przeglądarki podczas renderu
 - linki `tel:` i `mailto:` są obecne
 - kotwice istnieją: `#produkt`, `#next-day`, `#trasy`, `#lotniska`, `#flota`, `#kontakt`
+- dane firmy są widoczne w sekcji kontaktu: `PTS TRANS`, `Sławomir Szambelan`, `ul. Wakacyjna 3`, `05-090 Raszyn / Rybie`, `Trans nr: 303457-1`
+- JSON-LD zawiera adres firmy, właściciela, email `PTS.Trans@wp.pl` i numer telefonu `+48601302011`
 
 ## QA wizualne
 
@@ -54,6 +56,7 @@ Wyniki:
 - obrandowane obrazy floty ładują się poprawnie po przewinięciu
 - obrazy tras ładują się poprawnie po przewinięciu
 - treść zawiera główne komunikaty: `Warszawa`, `Wiedeń`, `Next Day`, `B2B`, `WWA`, `CARGO`, `Vienna Airport`
+- panel `Dane firmy` mieści się na mobile `390x844` i desktop `1280x720` bez poziomego scrolla
 
 ## Do domknięcia
 
