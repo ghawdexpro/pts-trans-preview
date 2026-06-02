@@ -1782,3 +1782,56 @@ section {
     font-size: 13px;
   }
 }
+
+/* Fixed header safety and clean no-map hero pass. */
+:root {
+  --site-header-height: 72px;
+}
+
+html {
+  scroll-padding-top: calc(var(--site-header-height) + 18px);
+}
+
+body {
+  padding-top: var(--site-header-height);
+}
+
+section {
+  scroll-margin-top: calc(var(--site-header-height) + 18px);
+}
+
+.site-header {
+  min-height: var(--site-header-height);
+}
+
+.site-nav {
+  top: var(--site-header-height);
+}
+
+.hero-generated {
+  min-height: calc(100svh - var(--site-header-height));
+}
+
+.hero-generated .hero-content {
+  padding-top: clamp(380px, 52svh, 520px);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --site-header-height: 66px;
+  }
+
+  .hero-generated {
+    min-height: calc(100svh - var(--site-header-height));
+  }
+
+  .hero-generated .hero-content {
+    padding-top: 424px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-generated .hero-content {
+    padding-top: 410px;
+  }
+}

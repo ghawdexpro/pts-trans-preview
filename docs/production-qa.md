@@ -45,9 +45,10 @@ Sprawdzone viewporty:
 Wyniki:
 
 - brak poziomego scrolla na desktop i mobile
-- desktop ładuje poziome hero `assets/hero-next-day-map.webp`
-- mobile ładuje pionowe hero `assets/hero-next-day-map-mobile.webp`
+- desktop ładuje poziome hero `assets/hero-next-day-map.webp` bez mapy w pierwszym ekranie
+- mobile ładuje pionowe hero `assets/hero-next-day-map-mobile.webp` bez mapy w pierwszym ekranie
 - wygenerowany napis w hero mieści się w kadrze mobile bez ręcznej nakładki HTML
+- stały header ma własny offset strony i nie przykrywa treści hero ani sekcji po wejściu z menu
 - menu mobilne otwiera się poprawnie, ustawia `aria-expanded="true"` i klasę `is-open`
 - sekcja floty nie nachodzi już nagłówkiem na etykietę `FLOTA NA RELACJĘ`
 - obrandowane obrazy floty ładują się poprawnie po przewinięciu
