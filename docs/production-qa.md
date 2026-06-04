@@ -1,15 +1,15 @@
 # Production QA
 
-Data kontroli: 2026-06-02
+Data kontroli: 2026-06-04
 
 ## Status
 
 Strona PTS TRANS działa produkcyjnie pod:
 
-- `http://ptstrans.pl/`
-- `http://www.ptstrans.pl/` przekierowuje na `http://ptstrans.pl/`
+- `https://ptstrans.pl/`
+- `https://www.ptstrans.pl/` przekierowuje na `https://ptstrans.pl/`
 
-HTTPS nie jest jeszcze wymuszony, bo GitHub Pages nie wystawił jeszcze certyfikatu dla `ptstrans.pl`. API GitHub zwraca `The certificate does not exist yet`.
+HTTPS jest aktywny i wymuszony w GitHub Pages. Certyfikat Let's Encrypt dla `ptstrans.pl` i `www.ptstrans.pl` ma status `approved`, a GitHub Pages API zwraca `https_enforced: true`.
 
 ## DNS i hosting
 
@@ -19,6 +19,8 @@ Sprawdzone rekordy DNS:
 - `AAAA ptstrans.pl` wskazuje na `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
 - `CNAME www.ptstrans.pl` wskazuje na `ghawdexpro.github.io`
 - GitHub Pages custom domain: `ptstrans.pl`
+- GitHub Pages source: branch `main`, katalog `/`
+- certyfikat HTTPS obejmuje `ptstrans.pl` i `www.ptstrans.pl`
 
 ## Testy techniczne
 
@@ -28,8 +30,10 @@ Wykonane kontrole:
 - `node --check script.js`
 - każdy `data-i18n` w HTML ma klucz w `i18n.js`
 - lokalne assety z `index.html` istnieją w repo
-- lokalnie `/`, `hero-next-day-map.webp`, `hero-next-day-map-mobile.webp`, `robots.txt` i `sitemap.xml` zwracają `200 OK`
-- `http://ptstrans.pl/` zwraca `200 OK` z GitHub Pages
+- produkcyjnie `/`, `hero-next-day-map.webp`, `hero-next-day-map-mobile.webp`, `route-warsaw-vienna.jpeg`, `route-warsaw-bratislava.jpeg`, `fleet-iveco-72t-branded.webp`, `robots.txt`, `sitemap.xml`, `styles.css`, `i18n.js` i `script.js` zwracają `200 OK`
+- `http://ptstrans.pl/` zwraca `301` na `https://ptstrans.pl/`
+- `https://ptstrans.pl/` zwraca `200 OK` z GitHub Pages
+- `https://www.ptstrans.pl/` zwraca `301` na `https://ptstrans.pl/`
 - tytuł strony: `PTS TRANS | Wiedeń i Bratysława Next Day B2B`
 - brak błędów i ostrzeżeń w konsoli przeglądarki podczas renderu
 - linki `tel:` i `mailto:` są obecne
@@ -69,17 +73,14 @@ Wyniki:
 - Dodać zabezpieczenie `@media (prefers-reduced-motion: reduce)`, które całkowicie wyłącza animację.
 - Przetestować na mobile, bo przy złym kadrowaniu taki efekt może odsłonić puste krawędzie albo uciąć auta/napisy.
 
-## Do domknięcia
+## Komendy kontrolne
 
-Po wystawieniu certyfikatu przez GitHub Pages włączyć HTTPS:
-
-```bash
-gh api -X PUT repos/ghawdexpro/pts-trans-preview/pages -F https_enforced=true
-```
-
-Następnie sprawdzić:
+Do ponownej kontroli produkcji:
 
 ```bash
+gh api repos/ghawdexpro/pts-trans-preview/pages --jq '{status,cname,html_url,https_enforced,https_certificate}'
+curl -I http://ptstrans.pl/
 curl -I https://ptstrans.pl/
 curl -I https://www.ptstrans.pl/
+node --check i18n.js && node --check script.js
 ```

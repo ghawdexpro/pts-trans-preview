@@ -18,19 +18,21 @@ Po stronie GitHub Pages custom domain powinien być ustawiony na:
 
 - `ptstrans.pl`
 
-HTTPS może potrzebować czasu po zmianach DNS. GitHub podaje, że wygenerowanie certyfikatu po poprawnej konfiguracji domeny może potrwać do około godziny.
+HTTPS jest aktywny i wymuszony. GitHub Pages ma certyfikat dla `ptstrans.pl` oraz `www.ptstrans.pl`.
 
 ## DNS w lh.pl
 
-Stan z 2026-06-02:
+Stan z 2026-06-04:
 
 - domena `ptstrans.pl` kupiona i zarządzana w lh.pl,
 - domena dodana jako strona WWW na serwerze `serwer398886`,
 - pozycja strony WWW w lh.pl: `1589726`,
 - strefa DNS w lh.pl: `1551944`,
 - GitHub Pages custom domain: `ptstrans.pl`,
-- `http://ptstrans.pl/` zwraca stronę z GitHub Pages,
-- HTTPS czeka na certyfikat GitHub Pages; po aktywacji certyfikatu trzeba włączyć `https_enforced`.
+- `https://ptstrans.pl/` zwraca stronę z GitHub Pages,
+- `https://www.ptstrans.pl/` przekierowuje na `https://ptstrans.pl/`,
+- `http://ptstrans.pl/` przekierowuje na `https://ptstrans.pl/`,
+- `https_enforced` jest włączone w GitHub Pages.
 
 Dla domeny głównej `ptstrans.pl` ustaw rekordy:
 
@@ -76,17 +78,21 @@ Oczekiwane:
 Po propagacji:
 
 ```bash
+curl -I http://ptstrans.pl/
 curl -I https://ptstrans.pl/
 curl -I https://www.ptstrans.pl/
 ```
 
 Oczekiwane:
 
-- `https://ptstrans.pl/` zwraca stronę PTS TRANS.
-- `https://www.ptstrans.pl/` przekierowuje na domenę główną albo również serwuje stronę, zależnie od ustawień GitHub Pages.
+- `http://ptstrans.pl/` zwraca `301` na `https://ptstrans.pl/`.
+- `https://ptstrans.pl/` zwraca `200 OK`.
+- `https://www.ptstrans.pl/` zwraca `301` na domenę główną.
 
-Jeśli HTTPS zwraca błąd certyfikatu zaraz po zmianie DNS, odczekaj na wystawienie certyfikatu GitHub Pages i dopiero wtedy włącz wymuszenie HTTPS:
+Aktualny stan GitHub Pages:
 
 ```bash
-gh api -X PUT repos/ghawdexpro/pts-trans-preview/pages -F https_enforced=true
+gh api repos/ghawdexpro/pts-trans-preview/pages --jq '{status,cname,html_url,https_enforced,https_certificate}'
 ```
+
+Oczekiwane: `status: built`, `cname: ptstrans.pl`, `html_url: https://ptstrans.pl/`, `https_enforced: true`, certyfikat `approved`.
