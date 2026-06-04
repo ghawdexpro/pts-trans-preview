@@ -17,9 +17,9 @@ window.PTSTRANS_I18N = {
     pl: {
       title: "PTS TRANS | Wiedeń i Bratysława Next Day B2B",
       description:
-        "PTS TRANS: codzienne dostawy Next Day Service dla firm na relacjach Warszawa - Wiedeń i Warszawa - Bratysława. Palety, części i codzienne odbiory z Wien Cargo / Vienna Cargo Airport.",
+        "PTS TRANS: codzienne dostawy Next Day Service dla firm na relacjach Warszawa - Wiedeń i Warszawa - Bratysława. Palety, części i codzienne odbiory z Wien CITY, CARGO / Vienna Cargo Airport.",
       ogDescription:
-        "Codzienne dostawy Next Day Service dla firm: Warszawa - Wiedeń oraz Warszawa - Bratysława. Palety, części i odbiory z Wien Cargo.",
+        "Codzienne dostawy Next Day Service dla firm: Warszawa - Wiedeń oraz Warszawa - Bratysława. Palety, części i odbiory z Wien CITY, CARGO.",
     },
   },
   translations: {
@@ -44,7 +44,7 @@ window.PTSTRANS_I18N = {
       "hero.fact2Label": "Tryb",
       "hero.fact2Value": "Next Day Service",
       "hero.fact3Label": "Punkty",
-      "hero.fact3Value": "Brno, Bratysława, Wien Cargo",
+      "hero.fact3Value": "Brno, Bratysława, Wien CITY, CARGO",
       "intro.b2bTitle": "WAW → VIE / BTS",
       "intro.b2bCopy": "dwie stałe relacje dla firm, magazynów i cargo",
       "intro.nextTitle": "Next Day Service",
@@ -61,7 +61,7 @@ window.PTSTRANS_I18N = {
       "service.partsTitle": "Części i AOG",
       "service.partsCopy":
         "Pilne części, paczki techniczne i towary, które blokują produkcję albo serwis.",
-      "service.airportsTitle": "Wien Cargo",
+      "service.airportsTitle": "Wien CITY, CARGO",
       "service.airportsCopy":
         "Codzienne odbiory z Vienna Cargo Airport i transport dalej do firm.",
       "service.nextTitle": "Stały next day",
@@ -78,21 +78,21 @@ window.PTSTRANS_I18N = {
         "Relacja ma stały rytm i punkty po drodze, zamiast każdorazowego budowania trasy od zera.",
       "next.deliveryTitle": "Dostawa BTS/VIE",
       "next.deliveryCopy": "Dostawa następnego dnia do Bratysławy, Wiednia lub punktu B2B w okolicy.",
-      "airports.eyebrow": "Wien Cargo",
+      "airports.eyebrow": "Wien CITY, CARGO",
       "airports.title": "Vienna Cargo Airport jako stały punkt odbioru",
       "airports.copy":
-        "Dla cargo lotniczego kluczowy jest szybki odbiór po stronie Wiednia. PTS TRANS jest codziennie na Wien Cargo / Vienna Cargo Airport i zabiera ładunki dalej na trasę do firm w Polsce, Czechach i Słowacji.",
+        "Dla cargo lotniczego kluczowy jest szybki odbiór po stronie Wiednia. PTS TRANS jest codziennie na Wien CITY, CARGO / Vienna Cargo Airport i zabiera ładunki dalej na trasę do firm w Polsce, Czechach i Słowacji.",
       "airports.callout":
-        "Główny kierunek cargo: odbiór z Wien Cargo / Vienna Cargo Airport i szybka dostawa do klienta B2B.",
-      "airports.item1": "Codzienne odbiory z Wien Cargo / Vienna Cargo Airport.",
+        "Główny kierunek cargo: odbiór z Wien CITY, CARGO / Vienna Cargo Airport i szybka dostawa do klienta B2B.",
+      "airports.item1": "Codzienne odbiory z Wien CITY, CARGO / Vienna Cargo Airport.",
       "airports.item2": "Części, paczki techniczne, palety i przesyłki czasowe z Wiednia.",
       "airports.item3": "Bezpośrednia informacja operacyjna: co, skąd, dokąd i na kiedy.",
       "routes.eyebrow": "Mapa operacyjna",
       "routes.title": "Dwie główne relacje next day, jeden rytm operacyjny",
       "routes.copy":
-        "Warszawa-Wiedeń i Warszawa-Bratysława są równorzędnymi produktami. Brno jest naturalnym punktem po drodze, a Wien Cargo / Vienna Cargo Airport jest stałym punktem odbioru dla cargo i produkcji.",
+        "Warszawa-Wiedeń i Warszawa-Bratysława są równorzędnymi produktami. Brno jest naturalnym punktem po drodze, a Wien CITY, CARGO / Vienna Cargo Airport jest stałym punktem odbioru dla cargo i produkcji.",
       "routes.vienna": "Warszawa - Wiedeń",
-      "routes.airports": "Wien Cargo - odbiór z Wiednia",
+      "routes.airports": "Wien CITY, CARGO - odbiór z Wiednia",
       "routes.bratislava": "Warszawa - Bratysława",
       "routes.brno": "Brno, Czechy",
       "routes.nextTag": "next day",
@@ -113,12 +113,14 @@ window.PTSTRANS_I18N = {
       "contact.eyebrow": "Spedycja 24h",
       "contact.title": "Podaj ładunek. Potwierdzimy trasę do Wiednia albo Bratysławy.",
       "contact.copy":
-        "W zapytaniu podaj punkt odbioru, punkt dostawy, godzinę gotowości, wymiary, wagę oraz liczbę palet lub paczek. Najszybciej potwierdzimy zlecenia na relacjach WAW-VIE, WAW-BTS i z odbiorem z Wien Cargo.",
+        "W zapytaniu podaj punkt odbioru, punkt dostawy, godzinę gotowości, wymiary, wagę oraz liczbę palet lub paczek. Najszybciej potwierdzimy zlecenia na relacjach WAW-VIE, WAW-BTS i z odbiorem z Wien CITY, CARGO.",
       "contact.phone": "Dyspozytor 24h",
       "contact.email": "Email",
       "contact.austria": "Spedycja Austria - Jacek Janicki",
       "contact.czechSlovakia": "Spedycja Czechy - Słowacja - Marcin Radziwiłowicz",
       "contact.warsaw": "Odbiory i dostawy Warszawa i okolice - Norbert Paluch",
+      "contact.vienna": "Dostawy i odbiory Wiedeń i okolice - Piotr Kozlowski",
+      "contact.billing": "Faktury, płatności - Edyta Szambelan",
       "company.label": "Dane firmy",
       "company.name": "PTS TRANS",
       "company.owner": "Sławomir Szambelan",

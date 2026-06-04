@@ -682,6 +682,11 @@ main:focus-visible {
   overflow-wrap: anywhere;
 }
 
+.contact-link[href^="tel:"] strong {
+  color: #ffb45f;
+  text-shadow: 0 0 20px rgba(255, 138, 42, 0.22);
+}
+
 .company-card {
   display: grid;
   gap: 4px;

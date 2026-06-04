@@ -33,6 +33,7 @@ Wykonane kontrole:
 - tytuł strony: `PTS TRANS | Wiedeń i Bratysława Next Day B2B`
 - brak błędów i ostrzeżeń w konsoli przeglądarki podczas renderu
 - linki `tel:` i `mailto:` są obecne
+- kontakty zawierają: Piotr Kozlowski `+48 507 111 642` oraz Edyta Szambelan `+48 509 519 195`
 - kotwice istnieją: `#produkt`, `#next-day`, `#trasy`, `#lotniska`, `#flota`, `#kontakt`
 - dane firmy są widoczne w sekcji kontaktu: `PTS TRANS`, `Sławomir Szambelan`, `ul. Wakacyjna 3`, `05-090 Raszyn / Rybie`, `Trans nr: 303457-1`
 - baza i magazyn są widoczne w panelu firmowym: `ul. Jaworskiego 8, 05-090 Raszyn`
@@ -56,9 +57,10 @@ Wyniki:
 - sekcja floty nie nachodzi już nagłówkiem na etykietę `FLOTA NA RELACJĘ`
 - obrandowane obrazy floty ładują się poprawnie po przewinięciu
 - obrazy tras ładują się poprawnie po przewinięciu
-- treść zawiera główne komunikaty: `Warszawa`, `Wiedeń`, `Next Day`, `B2B`, `Wien Cargo`, `Vienna Cargo Airport`
+- treść zawiera główne komunikaty: `Warszawa`, `Wiedeń`, `Next Day`, `B2B`, `Wien CITY, CARGO`, `Vienna Cargo Airport`
+- numery telefonów w sekcji kontaktu są wyróżnione pomarańczowym kolorem, a email pozostaje neutralny
 - panel `Dane firmy` mieści się na mobile `390x844` i desktop `1280x720` bez poziomego scrolla
-- hero pokazuje trasę bez osobnej odnogi `CARGO`; komunikat o codziennych odbiorach z `Wien Cargo / Vienna Cargo Airport` jest w sekcji lotnisk
+- hero pokazuje trasę bez osobnej odnogi `CARGO`; komunikat o codziennych odbiorach z `Wien CITY, CARGO / Vienna Cargo Airport` jest w sekcji lotnisk
 
 ## Backlog stylistyczny
 
