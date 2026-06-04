@@ -63,7 +63,7 @@ window.PTSTRANS_I18N = {
         "Pilne części, paczki techniczne i towary, które blokują produkcję albo serwis.",
       "service.airportsTitle": "Wien CITY, CARGO",
       "service.airportsCopy":
-        "Codzienne odbiory z Vienna Cargo Airport i transport dalej do firm.",
+        "Codzienne odbiory z Vienna Cargo Airport i dostawy do firm w Polsce.",
       "service.nextTitle": "Stały next day",
       "service.nextCopy":
         "Pilne zlecenia B2B na relacjach Warszawa-Wiedeń i Warszawa-Bratysława, planowane pod następny dzień.",
@@ -113,7 +113,7 @@ window.PTSTRANS_I18N = {
       "contact.eyebrow": "Spedycja 24h",
       "contact.title": "Podaj ładunek. Potwierdzimy trasę do Wiednia albo Bratysławy.",
       "contact.copy":
-        "W zapytaniu podaj punkt odbioru, punkt dostawy, godzinę gotowości, wymiary, wagę oraz liczbę palet lub paczek. Najszybciej potwierdzimy zlecenia na relacjach WAW-VIE, WAW-BTS i z odbiorem z Wien CITY, CARGO.",
+        "W zapytaniu podaj punkt odbioru, punkt dostawy, godzinę gotowości, wymiary, wagę oraz liczbę palet lub paczek. Najszybciej potwierdzimy zlecenia na relacjach WAW-VIE, WAW-BTS i z odbiorem z Wien CITY, CARGO. Realizujemy też zlecenia Super Ekspresowe na specjalne życzenie, z indywidualną wyceną.",
       "contact.phone": "Dyspozytor 24h",
       "contact.email": "Email",
       "contact.austria": "Spedycja Austria - Jacek Janicki",
