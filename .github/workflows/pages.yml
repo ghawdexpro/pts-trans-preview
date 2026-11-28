@@ -23,10 +23,23 @@ jobs:
           set -eu
           test -x "$HOME/.local/share/github-pages-gnu-tar/bin/gtar"
           echo "$HOME/.local/share/github-pages-gnu-tar/bin" >> "$GITHUB_PATH"
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@145243922b4465b78e04dd66294782c7de45901f
+        with:
+          ruby-version: '3.1'
+      - name: Build the existing GitHub Pages site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          set -eu
+          gem install github-pages --no-document
+          jekyll build --destination "$RUNNER_TEMP/pages-site"
+          test -f "$RUNNER_TEMP/pages-site/index.html"
+          test -f "$RUNNER_TEMP/pages-site/docs/domain-setup.html"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
         with:
-          path: .
+          path: ${{ runner.temp }}/pages-site
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: pages
