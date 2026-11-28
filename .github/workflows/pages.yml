@@ -13,8 +13,6 @@ concurrency:
 jobs:
   pages:
     runs-on: [self-hosted, macOS, X64, filip-v2-native-pages]
-    environment:
-      name: github-pages
     steps:
       - name: Checkout source
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
@@ -29,6 +27,12 @@ jobs:
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
         with:
           path: .
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: pages
+    runs-on: [self-hosted, macOS, X64, filip-v2-native-pages]
+    environment:
+      name: github-pages
+    steps:
       - name: Deploy Pages
-        if: github.ref == 'refs/heads/main'
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
